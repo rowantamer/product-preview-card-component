@@ -119,6 +119,7 @@ body {
   background-color: var(--clr-neutral-white);
   border-radius: 0.5rem;
   overflow: hidden;
+  display: grid;
 }
 
 .product__content { 
@@ -169,4 +170,11 @@ body {
   background-image:url("../images/icon-cart.svg");
  
 
+}
+
+/* for desktop */
+@media(min-width:600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
 }
